@@ -147,9 +147,11 @@ export function TextLayerInternal({
 
     container.innerHTML = '';
 
+    const textContentSource = page.streamTextContent();
+
     const parameters = {
       container,
-      textContent,
+      textContentSource,
       viewport,
     };
 
